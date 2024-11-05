@@ -45,7 +45,7 @@ export default function AIUniversityLanding() {
                 </p>
               </div>
               <Button size="lg" className="bg-[#4FC3F7] hover:bg-[#4FC3F7]/90 text-white shadow-[0_0_15px_rgba(79,195,247,0.5)]">
-                Jetzt Mitglied werden
+                <Link href="https://www.skool.com/aiuniversity/about">Jetzt Mitglied werden</Link>
               </Button>
             </div>
           </div>
@@ -222,7 +222,7 @@ export default function AIUniversityLanding() {
                 </li>
               </ul>
               <Button size="lg" className="bg-[#4FC3F7] hover:bg-[#4FC3F7]/90 text-white shadow-[0_0_15px_rgba(79,195,247,0.5)] mt-6">
-                Schließe dich der AI University an und starte deine AI Automation Agency
+                <Link href="https://www.skool.com/aiuniversity/about">Schließe dich der AI University an und starte deine AI Automation Agency</Link>
               </Button>
             </div>
           </div>
