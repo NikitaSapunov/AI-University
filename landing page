@@ -1,0 +1,247 @@
+import { Button } from "@/components/ui/button"
+import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
+import { FileText, Users, BookOpen, MessageCircle, Check } from "lucide-react"
+import Link from "next/link"
+import Image from "next/image"
+
+export default function AIUniversityLanding() {
+  return (
+    <div className="flex flex-col min-h-screen bg-[#1a1a1a]">
+      <header className="px-4 lg:px-6 h-16 flex items-center border-b border-white/10">
+        <Link href="#" className="flex items-center justify-center">
+          <Image
+            src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Bild%2011.10.24%20um%2015.42-TctLTA8ZpDrNvzBH023A0uu6hFxPvz.jpeg"
+            alt="AI University Logo"
+            width={48}
+            height={48}
+            className="mr-3"
+          />
+          <span className="font-bold text-xl text-white">AI University</span>
+        </Link>
+        <nav className="ml-auto flex gap-4 sm:gap-6">
+          <Link href="#learn" className="text-sm font-medium text-white/70 hover:text-white transition-colors">
+            Was du lernst
+          </Link>
+          <Link href="#community" className="text-sm font-medium text-white/70 hover:text-white transition-colors">
+            Community
+          </Link>
+          <Link href="#pricing" className="text-sm font-medium text-white/70 hover:text-white transition-colors">
+            Preise
+          </Link>
+        </nav>
+      </header>
+      <main className="flex-1">
+        <section className="w-full py-12 md:py-24 lg:py-32 xl:py-48 relative overflow-hidden">
+          <div className="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjAwIiBoZWlnaHQ9IjIwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48ZGVmcz48cGF0dGVybiBpZD0iZ3JpZCIgd2lkdGg9IjQwIiBoZWlnaHQ9IjQwIiBwYXR0ZXJuVW5pdHM9InVzZXJTcGFjZU9uVXNlIj48cGF0aCBkPSJNIDQwIDAgTCAwIDAgMCA0MCIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjMjkyOTI5IiBzdHJva2Utd2lkdGg9IjEiLz48L3BhdHRlcm4+PC9kZWZzPjxyZWN0IHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9InVybCgjZ3JpZCkiLz48L3N2Zz4=')] opacity-10"></div>
+          <div className="absolute inset-0 bg-gradient-to-r from-[#1a1a1a] via-transparent to-[#1a1a1a]"></div>
+          <div className="container relative px-4 md:px-6">
+            <div className="flex flex-col items-center space-y-4 text-center">
+              <div className="space-y-2">
+                <h1 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl lg:text-6xl/none text-white">
+                  Baue deine AI Automation Agency auf – Der Weg zu 10.000 € monatlich!
+                </h1>
+                <p className="mx-auto max-w-[700px] text-white/70 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
+                  Exklusiver Zugang zu Blueprints, Mindset-Coachings und wöchentlichen Q&As – Alles, was du für deinen Erfolg brauchst!
+                </p>
+              </div>
+              <Button size="lg" className="bg-[#4FC3F7] hover:bg-[#4FC3F7]/90 text-white shadow-[0_0_15px_rgba(79,195,247,0.5)]">
+                Jetzt Mitglied werden
+              </Button>
+            </div>
+          </div>
+        </section>
+        <section id="learn" className="w-full py-12 md:py-24 lg:py-32 bg-black/50">
+          <div className="container px-4 md:px-6">
+            <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl text-center mb-12 text-white">Was du lernst</h2>
+            <div className="grid gap-6 lg:grid-cols-2 lg:gap-12">
+              <Card className="bg-[#1a1a1a] border-[#333] hover:border-[#4FC3F7] transition-colors">
+                <CardHeader>
+                  <Users className="h-8 w-8 mb-2 text-[#4FC3F7]" />
+                  <CardTitle className="text-white">Zielgruppe & Nische finden</CardTitle>
+                </CardHeader>
+                <CardContent className="text-white/70">
+                  <p>Lerne, wie du deine perfekte Zielgruppe identifizierst und dich in einer lukrativen Nische positionierst.</p>
+                </CardContent>
+              </Card>
+              <Card className="bg-[#1a1a1a] border-[#333] hover:border-[#4FC3F7] transition-colors">
+                <CardHeader>
+                  <FileText className="h-8 w-8 mb-2 text-[#4FC3F7]" />
+                  <CardTitle className="text-white">Angebotserstellung</CardTitle>
+                </CardHeader>
+                <CardContent className="text-white/70">
+                  <p>Entwickle unwiderstehliche Angebote, die deine Kunden nicht ablehnen können.</p>
+                </CardContent>
+              </Card>
+              <Card className="bg-[#1a1a1a] border-[#333] hover:border-[#4FC3F7] transition-colors">
+                <CardHeader>
+                  <MessageCircle className="h-8 w-8 mb-2 text-[#4FC3F7]" />
+                  <CardTitle className="text-white">Akquise-Strategien</CardTitle>
+                </CardHeader>
+                <CardContent className="text-white/70">
+                  <p>Meistere die Kunst der Kundengewinnung mit bewährten Strategien und Techniken.</p>
+                </CardContent>
+              </Card>
+              <Card className="bg-[#1a1a1a] border-[#333] hover:border-[#4FC3F7] transition-colors">
+                <CardHeader>
+                  <BookOpen className="h-8 w-8 mb-2 text-[#4FC3F7]" />
+                  <CardTitle className="text-white">Fulfillment-Prozesse</CardTitle>
+                </CardHeader>
+                <CardContent className="text-white/70">
+                  <p>Optimiere deine Abläufe und liefere erstklassige Ergebnisse an deine Kunden.</p>
+                </CardContent>
+              </Card>
+            </div>
+          </div>
+        </section>
+        <section id="community" className="w-full py-12 md:py-24 lg:py-32 relative overflow-hidden">
+          <div className="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjAwIiBoZWlnaHQ9IjIwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48ZGVmcz48cGF0dGVybiBpZD0iZ3JpZCIgd2lkdGg9IjQwIiBoZWlnaHQ9IjQwIiBwYXR0ZXJuVW5pdHM9InVzZXJTcGFjZU9uVXNlIj48cGF0aCBkPSJNIDQwIDAgTCAwIDAgMCA0MCIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjMjkyOTI5IiBzdHJva2Utd2lkdGg9IjEiLz48L3BhdHRlcm4+PC9kZWZzPjxyZWN0IHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9InVybCgjZ3JpZCkiLz48L3N2Zz4=')] opacity-10"></div>
+          <div className="container relative px-4 md:px-6">
+            <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl text-center mb-12 text-white">Community-Vorteile</h2>
+            <div className="grid gap-6 lg:grid-cols-2 lg:gap-12">
+              <Card className="bg-[#1a1a1a] border-[#333] hover:border-[#4FC3F7] transition-colors">
+                <CardHeader>
+                  <FileText className="h-8 w-8 mb-2 text-[#4FC3F7]" />
+                  <CardTitle className="text-white">Blueprints</CardTitle>
+                </CardHeader>
+                <CardContent className="text-white/70">
+                  <p>Vorgefertigte Schritte zur Agenturgründung, die dir den Weg zum Erfolg ebnen.</p>
+                </CardContent>
+              </Card>
+              <Card className="bg-[#1a1a1a] border-[#333] hover:border-[#4FC3F7] transition-colors">
+                <CardHeader>
+                  <Users className="h-8 w-8 mb-2 text-[#4FC3F7]" />
+                  <CardTitle className="text-white">Mindset-Coachings</CardTitle>
+                </CardHeader>
+                <CardContent className="text-white/70">
+                  <p>Intensives Training zur Entwicklung des Unternehmer-Mindsets, das dich zum Erfolg führt.</p>
+                </CardContent>
+              </Card>
+              <Card className="bg-[#1a1a1a] border-[#333] hover:border-[#4FC3F7] transition-colors">
+                <CardHeader>
+                  <BookOpen className="h-8 w-8 mb-2 text-[#4FC3F7]" />
+                  <CardTitle className="text-white">Exklusive Ressourcen</CardTitle>
+                </CardHeader>
+                <CardContent className="text-white/70">
+                  <p>Zugang zu wertvollen Materialien und Checklisten, die dein Business voranbringen.</p>
+                </CardContent>
+              </Card>
+              <Card className="bg-[#1a1a1a] border-[#333] hover:border-[#4FC3F7] transition-colors">
+                <CardHeader>
+                  <MessageCircle className="h-8 w-8 mb-2 text-[#4FC3F7]" />
+                  <CardTitle className="text-white">Wöchentliche Q&As</CardTitle>
+                </CardHeader>
+                <CardContent className="text-white/70">
+                  <p>Live-Unterstützung und Networking-Möglichkeiten mit Experten und Gleichgesinnten.</p>
+                </CardContent>
+              </Card>
+            </div>
+            <div className="mt-12 text-center">
+              <p className="text-xl font-semibold text-white">
+                Werde Teil einer Community, die dich unterstützt, motiviert und zum Erfolg führt!
+              </p>
+            </div>
+          </div>
+        </section>
+        <section id="pricing" className="w-full py-12 md:py-24 lg:py-32 relative overflow-hidden">
+          <div className="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjAwIiBoZWlnaHQ9IjIwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48ZGVmcz48cGF0dGVybiBpZD0iZ3JpZCIgd2lkdGg9IjQwIiBoZWlnaHQ9IjQwIiBwYXR0ZXJuVW5pdHM9InVzZXJTcGFjZU9uVXNlIj48cGF0aCBkPSJNIDQwIDAgTCAwIDAgMCA0MCIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjMjkyOTI5IiBzdHJva2Utd2lkdGg9IjEiLz48L3BhdHRlcm4+PC9kZWZzPjxyZWN0IHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9InVybCgjZ3JpZCkiLz48L3N2Zz4=')] opacity-10"></div>
+          <div className="container relative px-4 md:px-6">
+            <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl text-center mb-12 text-white">
+              Investiere in deine Zukunft
+            </h2>
+            <div className="flex justify-center">
+              <Card className="w-full max-w-md bg-[#1a1a1a] border-[#333] hover:border-[#4FC3F7] transition-colors">
+                <CardHeader>
+                  <CardTitle className="text-2xl text-white">AI University Mitgliedschaft</CardTitle>
+                </CardHeader>
+                <CardContent>
+                  <div className="text-4xl font-bold mb-2 text-[#4FC3F7]">45€ / Monat</div>
+                  <p className="text-lg mb-4 text-white/70">Das sind nur 1,50€ pro Tag!</p>
+                  <ul className="space-y-2 text-white/70">
+                    <li className="flex items-center">
+                      <Check className="h-5 w-5 mr-2 text-[#4FC3F7]" />
+                      Zugang zu allen Kursen und Ressourcen
+                    </li>
+                    <li className="flex items-center">
+                      <Check className="h-5 w-5 mr-2 text-[#4FC3F7]" />
+                      Wöchentliche Live-Coaching-Sessions
+                    </li>
+                    <li className="flex items-center">
+                      <Check className="h-5 w-5 mr-2 text-[#4FC3F7]" />
+                      Exklusive Community-Plattform
+                    </li>
+                    <li className="flex items-center">
+                      <Check className="h-5 w-5 mr-2 text-[#4FC3F7]" />
+                      1-zu-1 Mentoring
+                    </li>
+                  </ul>
+                </CardContent>
+                <CardContent>
+                  <Button className="w-full bg-[#4FC3F7] hover:bg-[#4FC3F7]/90 text-white shadow-[0_0_15px_rgba(79,195,247,0.5)]">
+                    Jetzt starten
+                  </Button>
+                </CardContent>
+              </Card>
+            </div>
+          </div>
+        </section>
+        <section className="w-full py-12 md:py-24 lg:py-32 bg-black/50">
+          <div className="container px-4 md:px-6">
+            <div className="flex flex-col items-center space-y-4 text-center">
+              <div className="space-y-2">
+                <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl lg:text-6xl/none text-white">
+                  Bereit, deine AI Automation Agency zu starten?
+                </h2>
+                <p className="mx-auto max-w-[700px] text-white/70 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
+                  Tritt jetzt der AI University bei und starte deine Reise zu finanzieller Freiheit und beruflichem Erfolg.
+                </p>
+              </div>
+              <ul className="grid gap-2 md:grid-cols-2 lg:grid-cols-3 text-left text-white/70">
+                <li className="flex items-center">
+                  <Check className="h-5 w-5 mr-2 text-[#4FC3F7]" />
+                  Bewährte Blueprints
+                </li>
+                <li className="flex items-center">
+                  <Check className="h-5 w-5 mr-2 text-[#4FC3F7]" />
+                  Mindset-Coaching
+                </li>
+                <li className="flex items-center">
+                  <Check className="h-5 w-5 mr-2 text-[#4FC3F7]" />
+                  Exklusive Ressourcen
+                </li>
+                <li className="flex items-center">
+                  <Check className="h-5 w-5 mr-2 text-[#4FC3F7]" />
+                  Wöchentliche Q&As
+                </li>
+                <li className="flex items-center">
+                  <Check className="h-5 w-5 mr-2 text-[#4FC3F7]" />
+                  Supportive Community
+                </li>
+                <li className="flex items-center">
+                  <Check className="h-5 w-5 mr-2 text-[#4FC3F7]" />
+                  Skalierung auf 10.000€/Monat
+                </li>
+              </ul>
+              <Button size="lg" className="bg-[#4FC3F7] hover:bg-[#4FC3F7]/90 text-white shadow-[0_0_15px_rgba(79,195,247,0.5)] mt-6">
+                Schließe dich der AI University an und starte deine AI Automation Agency
+              </Button>
+            </div>
+          </div>
+        </section>
+      </main>
+      <footer className="flex flex-col gap-2 sm:flex-row py-6 w-full shrink-0 items-center px-4 md:px-6 border-t border-white/10">
+        <p className="text-xs text-white/50">© 2024 AI University. Alle Rechte vorbehalten.</p>
+        <nav className="sm:ml-auto flex gap-4 sm:gap-6">
+          <Link href="#" className="text-xs text-white/50 hover:text-white transition-colors">
+            Datenschutz
+          </Link>
+          <Link href="#" className="text-xs text-white/50 hover:text-white transition-colors">
+            Impressum
+          </Link>
+          <Link href="#" className="text-xs text-white/50 hover:text-white transition-colors">
+            Kontakt
+          </Link>
+        </nav>
+      </footer>
+    </div>
+  )
+}
